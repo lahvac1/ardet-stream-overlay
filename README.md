@@ -25,7 +25,9 @@ zrovna ukazuje:
 ## Stažení a spuštění
 
 1. Stáhni nejnovější `stream-overlay-windows-x64.zip` ze
-   [Releases](../../releases) a rozbal do vlastní složky.
+   [Releases](../../releases) a rozbal do vlastní složky. Kromě
+   `stream-overlay.exe` tam bude i složka `_internal/` (knihovny, které exe
+   potřebuje) — nech ji vedle exe, nepřesouvej exe samotné jinam.
 2. V rozbalené složce spusť `stream-overlay.exe`. Otevře se okno příkazové
    řádky (appka v něm běží — nezavírej ho) a appka vedle sebe rovnou založí
    dvě prázdné složky — `sponsors/` a `main-sponsors/` (víc o nich níž). V
