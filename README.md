@@ -76,9 +76,28 @@ zavři.
 
 - **Port 5000 už používá jiný program** → uprav v Nastavení port appky
   (dole na stránce), nebo zavři program, který port 5000 blokuje.
-- **Windows Defender/SmartScreen appku zablokoval** → klikni "Více
-  informací" → "Přesto spustit" (nepodepsaná appka od menšího vývojáře,
-  nic zákeřného v ní není — zdrojový kód appky pochází z tohoto repa).
+- **Windows Defender appku zablokoval / dal do karantény, zip nejde
+  otevřít ("Přístup byl odepřen")** → appka je nepodepsaná (chybí drahý
+  code-signing certifikát), a Windows Defender u nepodepsaných PyInstaller
+  aplikací dost často vyhodí falešný poplach — je to o balíčkovacím
+  nástroji, ne o kódu appky samotné (zdrojáky jsou veřejně v tomhle repu).
+  Postup, jak se k appce dostat:
+  1. **Windows Security** (Start → napiš "Windows Security") → **Virus &
+     threat protection** → dole **Protection history**.
+  2. Najdi záznam se `stream-overlay.exe` (jméno detekce bude nějaké obecné,
+     typu `Trojan:Script/Wacatac`, `Program:Win32/Wacapew` apod. — časté
+     generické false-positive u PyInstaller aplikací).
+  3. Klikni na něj → **Actions** → **Restore** (případně rovnou nabídne
+     "Allow on device").
+  4. Pokud SmartScreen ještě zablokuje samotné spuštění ("Windows
+     protected your PC") → **More info** → **Run anyway**.
+  - Chceš appku po tomhle Microsoftu i nahlásit jako false-positive (aby
+    do budoucna přestala padat do karantény)? Jdi na
+    [microsoft.com/wdsi/filesubmission](https://www.microsoft.com/en-us/wdsi/filesubmission),
+    nahraj obnovený `stream-overlay.exe`, zvol že nesouhlasíš s detekcí.
+    Microsoft do pár dní whitelistne tenhle konkrétní build (týká se ale
+    jen aktuální verze — každý další release má jiný soubor/hash, takže se
+    to může zopakovat).
 - **Na `/overlay` nic není** → appka musí běžet a v Nastavení musí být
   vybraná soutěž.
 - **Chci appku vidět s testovacími daty bez zásahu do živé soutěže** →
