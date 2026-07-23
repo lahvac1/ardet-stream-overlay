@@ -1,0 +1,52 @@
+Copyright (c) 2026 Roman Hlavaty. All rights reserved.
+
+---
+
+## Souhrn (česky, informativní — závazné je pouze anglické znění níže)
+
+Tento software (Stream Overlay pro požární sport) je zdarma k použití pro
+provoz živých přenosů soutěží. Bez předchozího písemného souhlasu autora
+NENÍ dovoleno:
+
+- upravovat, dekompilovat, zpětně analyzovat nebo jinak vytvářet odvozená
+  díla ze zdrojového kódu ani z distribuovaného programu, ani šířit takto
+  upravené či odvozené verze,
+- odstraňovat, skrývat, znepřístupňovat nebo jinak měnit název či logo
+  Ardet zobrazované softwarem (včetně banneru, který produkuje),
+- postupovat toto oprávnění třetí straně.
+
+O svolení lze autora požádat — viz kontakt v hlavním README repozitáře.
+
+---
+
+## License (English — binding text)
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation, whether as source code
+or as a compiled/distributed release (the "Software"), to use the Software
+for its intended purpose — displaying broadcast overlays for sport
+competitions — subject to the following restrictions:
+
+1. **No modification.** You may not modify, decompile, reverse-engineer,
+   disassemble, or create derivative works based on the Software, nor
+   distribute any such modified or derivative version, without the prior
+   written permission of the copyright holder.
+
+2. **No removal of attribution.** You may not remove, obscure, disable, or
+   otherwise alter the "Ardet" name, logo, or other branding as displayed
+   by the Software, including in the on-screen overlay it produces,
+   without the prior written permission of the copyright holder.
+
+3. **No sublicensing.** The permission granted here is personal to the
+   recipient and may not be sublicensed, sold, or transferred to a third
+   party.
+
+This permission automatically terminates if you breach any of the above
+restrictions.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

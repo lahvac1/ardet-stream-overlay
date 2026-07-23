@@ -103,6 +103,11 @@ zavři.
 - **Chci appku vidět s testovacími daty bez zásahu do živé soutěže** →
   v Nastavení zapni Demo režim.
 
+## Licence
+
+Viz [LICENSE](LICENSE) — appka je zdarma k použití, ale bez svolení autora
+není dovoleno upravovat kód/program ani odstraňovat znak Ardet z banneru.
+
 ## Poznámky
 
 - Pořadí týmů se za běhu soutěže může měnit (pořadatel může přeuspořádat
